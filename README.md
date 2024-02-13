@@ -1,7 +1,7 @@
-repository-name
-# Repository Name
+scaleway-kapsule
+# Scaleway Kapsule
 
-Based on "ABC" at https://www.abc.com/
+Based on "Getting started with Scaleway’s managed Kubernetes service - Kapsule" at https://atodorov.me/2019/11/21/getting-started-with-scaleways-managed-kubernetes-service-kapsule/
 
 ## 100 - Introduction
 
