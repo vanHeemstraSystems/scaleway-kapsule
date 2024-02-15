@@ -5,7 +5,7 @@ Scaleway Kubernetes Kapsule provides a managed environment for you to create, co
 The service offers full flexibility such as:
 
 - Scaling the number of pods depending on the workload.
-- Managing your cluster easily via the [Kubectlhttps://kubernetes.io/docs/reference/kubectl/overview/]
+- Managing your cluster easily via the [Kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)
 
 To administrate your Kubernetes cluster easily, Scaleway provides a .kubeconfig file that allows you to manage your cluster from your local computer by using kubectl. Kubectl
  is the command line interface for running commands against Kubernetes clusters.
