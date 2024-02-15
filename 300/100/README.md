@@ -7,34 +7,45 @@ The service offers full flexibility such as:
 - Scaling the number of pods depending on the workload.
 - Managing your cluster easily via the [Kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)
 
-To administrate your Kubernetes cluster easily, Scaleway provides a .kubeconfig file that allows you to manage your cluster from your local computer by using kubectl. Kubectl
+To administrate your Kubernetes cluster easily, Scaleway provides a ```.kubeconfig``` file that allows you to manage your cluster from your local computer by using ```kubectl```. [Kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)
  is the command line interface for running commands against Kubernetes clusters.
 
-Security & Identity (IAM)
-To perform certain actions described below, you must either be the Owner of the Organization in which the actions will be performed, or an IAM user with the necessary permissions.
+**Security & Identity (IAM)**
+To perform certain actions described below, you must either be the [Owner](https://www.scaleway.com/en/docs/identity-and-access-management/iam/concepts/#owner) of the Organization in which the actions will be performed, or an IAM user with the [necessary permissions](https://www.scaleway.com/en/docs/identity-and-access-management/iam/concepts/#permission).
 
-Requirements
-You have an account and are logged into the Scaleway console
-Click Kubernetes in the Containers section of the Scaleway console
- side menu. The Kubernetes dashboard displays.
-Click Create cluster. The first page of the cluster creation wizard displays.
-This page concerns the configuration of your cluster. Enter the following information:
-The cluster type. Select Kubernetes Kapsule cluster to create a cluster using exclusively Scaleway Instances.
-Note
-This document concerns the creation and management of a Kubernetes Kapsule cluster. To create a Kubernetes Kosmos cluster, refer to the Kubernetes Kosmos documentation
+**Requirements**
+- You have an account and are logged into the [Scaleway console](https://console.scaleway.com/)
 
-The geographical region of the cluster.
-The Kubernetes version for the cluster.
-Configure the Private Network for the cluster. A Private Network allows your cluster to communicate in an isolated and secure network. Each cluster is autoconfigured using a /22 IP subnet. You can either:
-Attach an existing Private Network (VPC) within the same Availability Zone from the drop-down.
-Attach a new Private Network to the cluster.
-Important
+1. Click **Kubernetes** in the **Containers** section of the [Scaleway console](https://console.scaleway.com/)
+
+2. Click **Create cluster**. The first page of the cluster creation wizard displays.
+
+3. This page concerns the configuration of your cluster. Enter the following information:
+
+- The **cluster type**. Select **Kubernetes Kapsule** cluster to create a cluster using exclusively Scaleway Instances.
+
+**Note**
+This document concerns the creation and management of a **Kubernetes Kapsule** cluster. To create a Kubernetes Kosmos cluster, refer to the [Kubernetes Kosmos documentation](https://www.scaleway.com/en/docs/containers/kubernetes/how-to/create-kosmos-cluster/).
+
+- The geographical **region** of the cluster.
+- The Kubernetes **version** for the cluster.
+
+4. Configure the **Private Network** for the cluster. A Private Network allows your cluster to communicate in an isolated and secure network. Each cluster is autoconfigured using a /22 IP subnet. You can either:
+
+- Attach an existing Private Network (VPC) within the same Availability Zone from the drop-down.
+- Attach a new Private Network to the cluster.
+
+**Important**
 The Private Network of your cluster can not be detached, and the cluster can not be moved to another Private Network after creation.
 
-Enter the name for the cluster and, optionally, a description and tags, which can help you organize your cluster.
-Click Next. The second page of the Kapsule cluster creation wizard displays.
-This page concerns the settings for your cluster’s pool. Enter the following information:
-The Availability Zone in which all your pool’s nodes will be created.
-The node type you require.
-The configuration for your node options, including the number of nodes and whether to enable autoscale. You can also choose whether to enable autoheal and whether to link the cluster to a placement group. Alternatively, you can leave these options at default values.
-Click Create cluster. Your cluster is being deployed. Once the cluster is ready, it appears in the clusters list.
+5. Enter the **name** for the cluster and, optionally, a description and tags, which can help you organize your cluster.
+
+6. Click **Next**. The second page of the Kapsule cluster creation wizard displays.
+
+7. This page concerns the settings for your cluster’s pool. Enter the following information:
+
+- The **Availability Zone** in which all your pool’s nodes will be created.
+- The **node type** you require.
+- The configuration for your **node options**, including the number of nodes and whether to enable autoscale. You can also choose whether to enable autoheal and whether to link the cluster to a placement group. Alternatively, you can leave these options at default values.
+
+8. Click **Create cluster**. Your cluster is being deployed. Once the cluster is ready, it appears in the clusters list.
